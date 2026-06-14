@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>플로피 디스크 명함</title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <main class="floppy-card" id="floppyCard">
+    <section class="white-label">
+      <div class="label-content">
+        <h1>김진범</h1>
+        <p class="job">개발PM</p>
+
+        <div class="contact">
+          <p>
+            <span class="contact-icon">✉️</span>
+            <span id="emailText">kimpm@company.co.kr</span>
+          </p>
+
+          <p>
+            <span class="contact-icon">☎️</span>
+            <span>010-9876-5432</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="slot"></div>
+    </section>
+
+    <section class="disk-cover">
+      <div class="cover-left"></div>
+      <div class="cover-right"></div>
+      <div class="cover-bottom"></div>
+
+      <div class="logo">⌘</div>
+
+      <div class="actions">
+        <button type="button" class="button primary" id="copyEmailButton">
+          이메일 저장하기
+        </button>
+
+        <a href="tel:01098765432" class="button secondary">
+          전화하기
+        </a>
+
+        <a
+          href="https://github.com/susubam"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button github"
+        >
+          👨‍💻Github 보기
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
