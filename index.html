@@ -5,15 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>플로피 디스크 명함</title>
 
+  <!-- Pretendard -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+  <!-- IBM Plex Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap"
+  rel="stylesheet">
+
   <link rel="stylesheet" href="./style.css" />
   <script src="./script.js" defer></script>
 </head>
 
 <body>
+
   <main class="floppy-card" id="floppyCard">
+
+    <!-- 하얀 라벨 -->
     <section class="white-label">
+
       <div class="label-content">
+
         <h1>김진범</h1>
+
+        <div class="name-line"></div>
+
         <p class="job">개발PM</p>
 
         <div class="contact">
@@ -27,24 +46,47 @@
             <span>010-9876-5432</span>
           </p>
         </div>
+
+        <img
+          class="profile-image"
+          src="./profile.jpg"
+          alt="프로필 사진"
+        />
+
       </div>
 
       <div class="slot"></div>
+
     </section>
 
+    <!-- 플로피 디스크 본체 -->
     <section class="disk-cover">
+
       <div class="cover-left"></div>
       <div class="cover-right"></div>
       <div class="cover-bottom"></div>
 
-      <div class="logo">⌘</div>
+      <!-- SVG 로고 -->
+      <svg class="logo-svg" viewBox="0 0 64 64">
+        <path d="M32 8 C26 8 22 12 22 18 C22 24 26 28 32 28 C38 28 42 24 42 18 C42 12 38 8 32 8Z" />
+        <path d="M32 36 C26 36 22 40 22 46 C22 52 26 56 32 56 C38 56 42 52 42 46 C42 40 38 36 32 36Z" />
+        <path d="M8 32 C8 26 12 22 18 22 C24 22 28 26 28 32 C28 38 24 42 18 42 C12 42 8 38 8 32Z" />
+        <path d="M36 32 C36 26 40 22 46 22 C52 22 56 26 56 32 C56 38 52 42 46 42 C40 42 36 38 36 32Z" />
+      </svg>
 
+      <!-- 버튼 -->
       <div class="actions">
-        <button type="button" class="button primary" id="copyEmailButton">
+
+        <button
+          type="button"
+          class="button primary"
+          id="copyEmailButton">
           이메일 저장하기
         </button>
 
-        <a href="tel:01098765432" class="button secondary">
+        <a
+          href="tel:01098765432"
+          class="button secondary">
           전화하기
         </a>
 
@@ -52,12 +94,15 @@
           href="https://github.com/susubam"
           target="_blank"
           rel="noopener noreferrer"
-          class="button github"
-        >
-          👨‍💻Github 보기
+          class="button github">
+          👨‍💻 Github 보기
         </a>
+
       </div>
+
     </section>
+
   </main>
+
 </body>
 </html>
